@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Diary</title>
+    <script src = 'javascript.js'></script>
+</head>
+<body>
+  <h1 class = 'text-center'>Rucsanda's Travel Journal</h1> 
+  
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link" aria-current="page" href="./index.html">Main</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="./addEntry.html">Add Entry</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="./abAuthor.html">About the Author</a>
+    </li>
+    
+  </ul>
+  <div class="mb-3" style="margin-top: 20px;">
+    <label for="exampleFormControlInput1" class="form-label">Title</label>
+    <input class="form-control" id="exampleFormControlInput1" placeholder="What Happened Today?">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Details</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder='Let it all out...' rows="20"></textarea>
+    <div class="col-12" style="margin-top: 20px;">
+        <button type="submit" class="btn btn-primary" onclick="store()">Post</button>
+      </div>
+  </div>
+</body>
+</html>
